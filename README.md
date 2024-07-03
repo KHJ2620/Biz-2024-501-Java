@@ -25,3 +25,28 @@ git commit -m "처음으로 업로드 하기"
 ```bash
 git push -u origin master
 ```
+
+## 새로운 컴퓨터에 github 환경 설정하기
+- `git-scm.com` 에 접속하여 `git bash` 다운받기
+- 아무곳에서나 `git bash shell` 실행하기
+- 접속환경 설정하기
+```bash
+git config --global user.name
+git config --global user.email
+```
+
+## 다른 컴퓨터에서 `git repository 다운 받기(복제하기)`
+```bash
+git clone https://github.com/KHJ2620/Biz-2024-501-Java.git
+```
+
+## 주의사항
+- 다른 컴퓨터에서 프로젝트 코드를 변경한 경우 반드시 push 하기
+```bash
+git add .
+git commit -m 숙제하기
+git push -u origin master
+```
+
+
+``` 
