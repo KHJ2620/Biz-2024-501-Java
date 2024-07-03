@@ -9,7 +9,7 @@ public class HelloD {
 		 * (기억) 저장공간을 효율적으로 사용하기 위하여
 		 */
 		
-		int num1 = 100;       // 할당
+		int num1 = 100;       // 선언-할당
 		long num2 = 100L;
 		
 		// 기억장치를 효율적으로 쓰기 위해

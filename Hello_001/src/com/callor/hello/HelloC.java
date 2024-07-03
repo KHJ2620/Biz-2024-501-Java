@@ -13,12 +13,16 @@ public class HelloC {
 	public static void main(String[] args) {
 		int num1 = 30;
 		int num2 = 40;
-		int sum = num1 + num2;
+		int sum = num1 + num2;  // 70
 		
 		num1 = 100;
 		num2 = 0;
 		
-		System.out.println(sum);
+		System.out.println(sum); // 70
+		
+		// 이미 앞에서 sum이라는 변수를 통해 더해진 후에
+		// num1과 num2의 수가 바꼈기 때문에 뒤의 합해진 100이 
+		//적용되는 것이 아니라 70이 출력된다
 
 	}
 

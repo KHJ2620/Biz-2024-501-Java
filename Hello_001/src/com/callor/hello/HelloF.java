@@ -22,6 +22,9 @@ public class HelloF {
 		System.out.printf("%d - %d = %d\n", num1, sum, result1);
 		System.out.printf("%d * %d = %d\n", num2, result1, result2);
 		System.out.printf("%d ÷ %d = %.2f\n", sum, result1, result3);
+		
+		// printf로 출력 format을 지정할 수 있음
+		// %d 정수형, \n 줄바꿈, .2f 실수형(소수점 둘째자리)
 
 	}
 

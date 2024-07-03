@@ -17,5 +17,6 @@ public class HelloE {
 		System.out.println((float)num1 / num2);
 
 	}
-
+		// 나누기에서 정수 / 정수는 정수형태가 나오기 때문에 
+		// 앞에 실수형(float)를 붙여주기
 }

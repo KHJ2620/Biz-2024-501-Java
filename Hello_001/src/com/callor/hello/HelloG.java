@@ -4,6 +4,8 @@ package com.callor.hello;
 /*
  * main() method를 만들고 
  * 정수 1~10까지 숫자를 console에 출력하기
+ * 
+ * 출력할 때는 i=0부터 시작해야하고 <= 보다 < 쓰는 것이 좋음(출력문에서 수정해주기)
  */
 
 public class HelloG {
@@ -12,10 +14,10 @@ public class HelloG {
 			System.out.print(i + " ");
 		}
 		
-		for(int i =0; i<10; i++) {
+		for(int i=0; i<10; i++) {
 			System.out.println(i+1);
 		}
-		System.out.println("=".repeat(30));
+		System.out.println("=".repeat(30)); // =을 30번 반복
 		
 		/*
 		 * 1~10까지 정수를 
@@ -39,9 +41,12 @@ public class HelloG {
 	 * 		6 7 8 9 10 형식으로 출력
 	 */
 	
-	for(int i=0; i<100; i++) {
-		System.out.print(i+1 + " ");
-		
+	for(int i=0; i<100; i++) {	
+		if((i+1)%5 == 0) {
+			System.out.println(i+1 + " ");
+		} else {
+			System.out.print(i+1 + " ");
+		}
 	}
 	
 	}
