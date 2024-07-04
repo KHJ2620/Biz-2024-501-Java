@@ -15,16 +15,25 @@ public class HelloL {
 		for(int i=0; i<nums.length; i++) {
 			nums[i] = 2 + (int)(Math.random()*99);
 		}
-		int index;
-		for(int i=0; i<nums.length; i++ ) {
-			for(index=2; index<101; index++) {
-				if(nums[i] % index == 0) {
-					break;
+		
+		int primeSum = 0;
+        int primeCount = 0;
+        
+		for(int i=0; i<nums.length; i++ ) {	
+			boolean isPrime = true;
+			for(int j = 2; j < nums[i]; j++) {
+				if (nums[i] % j == 0) {
+					 isPrime = false;
+                     break;
 				}
 			}
-			
+			if (isPrime) {
+	            primeSum += nums[i];
+	            primeCount++;
+	        }
 		}
-		
+		System.out.println("배열에 저장된 소수의 합 : " + primeSum);
+        System.out.println("배열에 저장된 소수의 개수 : " + primeCount);
 	}
 
 }

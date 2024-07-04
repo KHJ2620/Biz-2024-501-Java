@@ -5,7 +5,7 @@ package com.callor.hello;
  */
 public class HelloD {
 	public static void main(String[] args) {
-		int sum = 0;
+		int sum = 0;  //변수를 for문 밖에서 선언
 		for(int i=0; i<100; i++) {
 			int num = i+1;
 			if(num %2==0) {

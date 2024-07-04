@@ -15,7 +15,7 @@ public class HelloI {
 		// 배열에 저장된 값을 출력하는 block
 		for(int i=0; i<nums.length; i++) {
 			System.out.print(nums[i] + " ");
-			if((i+1) % 5 ==0) System.out.println();
+			if((i+1) % 5 ==0) System.out.println();  // 5개씩 끊어서 출력
 		}
 	}
 }

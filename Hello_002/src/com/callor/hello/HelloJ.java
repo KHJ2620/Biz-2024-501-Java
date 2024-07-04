@@ -34,7 +34,7 @@ public class HelloJ {
 		for(int i=0; i<nums.length; i++) {
 			sum += nums[i];
 		}
-		double average = (double)sum / nums.length;
+		double average = (double)sum / nums.length;    // float 로 해도 됨
 		System.out.printf("배열의 합계 : %d\n ", sum);
 		System.out.printf("배열의 평균 : %.2f\n", average);
 		

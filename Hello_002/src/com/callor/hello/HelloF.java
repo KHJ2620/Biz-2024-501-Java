@@ -24,9 +24,9 @@ public class HelloF {
 			}
 		}
 		if(index < num) {
-			System.out.println(num + " 는 소수 아님");
+			System.out.println(num + " 는 소수 아님"); //for문에서 break가 걸렸기 때문에 index가 num보다 작게 됨
 		}else {
-			System.out.println(num + " 는 소수");
+			System.out.println(num + " 는 소수"); //for문에서 break가 걸리지 않고 완전히 통과했기 때문에 index랑 num이 같아짐
 		}
 	}
 }

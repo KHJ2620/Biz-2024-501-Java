@@ -6,7 +6,7 @@ public class HelloG {
 		
 		int index = 0;
 		for(;;) {
-			if(index++ > 99) {
+			if(index++ > 99) {  // 100이 되면 break
 				break;
 			}
 			System.out.println("Hello Korea");
@@ -17,5 +17,5 @@ public class HelloG {
 		}
 
 	}
-
+		// 위 두 코드가 같은 코드임
 }
