@@ -48,6 +48,13 @@ public class HelloG {
 			System.out.print(i+1 + " ");
 		}
 	}
+	System.out.println("\n" + "=".repeat(30));
 	
+	for(int i=0; i<100; i++) {
+		System.out.print(i+1 + " ");
+		if((i+1)%5 == 0) {
+			System.out.println();
+		}
+	}
 	}
 }
