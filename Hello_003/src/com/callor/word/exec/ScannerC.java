@@ -38,11 +38,11 @@ public class ScannerC {
 			String strKor = scan.nextLine();
 			try {
 				intKor = Integer.parseInt(strKor);
-				if(intKor < 0 || intKor > 100 ) {
+				if(intKor < 0 || intKor > 100 ) { //0보다 작거나 100보다 클때 
 					System.out.println("점수는 0부터 100점까지만 입력하세요");
 					continue;
 				}
-			} catch (Exception e) {
+			} catch (Exception e) { //예외 발생(숫자로 입력하지 않았을 때)
 				System.out.println("국어 점수는 숫자로만 입력하세요");
 				continue;
 			}

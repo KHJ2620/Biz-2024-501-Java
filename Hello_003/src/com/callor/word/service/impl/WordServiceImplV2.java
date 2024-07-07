@@ -30,15 +30,15 @@ public class WordServiceImplV2 extends WordServiceImplV1 {
 	
 	@Override
 	public WordVO getWord() {
-		int listSize = wordList.size();
-		if(listSize < 1) {
-			this.wordFileRead();
-			listSize = wordList.size();
-		}
+		int listSize = wordList.size();  //wordList의 개수
+//		if(listSize < 1) {
+//			this.wordFileRead();
+//			listSize = wordList.size();
+//		}
 		
-		int position = (int)(Math.random()*listSize);
+		int position = (int)(Math.random()*listSize); //wordList의 개수로 random 값
 		
-		return wordList.get(position);
+		return wordList.get(position);  //임의의 단어 하나 가져오기
 	}
 	
 	

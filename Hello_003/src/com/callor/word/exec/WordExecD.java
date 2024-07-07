@@ -19,7 +19,7 @@ public class WordExecD {
 		}
 		
 		
-		GamePlayService playService = new GamePlayServiceImplV1(null, null);
+		GamePlayService playService = new GamePlayServiceImplV1(wordService);
 		playService.gameStart();
 	}
 }

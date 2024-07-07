@@ -58,23 +58,23 @@ public class WordServiceImplV1 implements WordService {
 	
 	@Override
 	public void wordFileRead() {
-		InputStream fileInput = null;
-		
-		try {
-			fileInput = new FileInputStream(wordFile);
-		} catch (FileNotFoundException e) {
-			System.out.println(wordFile + " 파일을 읽을 수 없음");
-		}
-		
-		Scanner fileScan = new Scanner(fileInput);
+//		InputStream fileInput = null;
+//		
+//		try {
+//			fileInput = new FileInputStream(wordFile);
+//		} catch (FileNotFoundException e) {
+//			System.out.println(wordFile + " 파일을 읽을 수 없음");
+//		}
+//		
+//		Scanner fileScan = new Scanner(fileInput);
 		while(fileScan.hasNext()) {
 			String line = fileScan.nextLine();
-			String[] lines = line.split(":");
+			String[] lines = line.split(":");    // :으로 분해하기
 			
 			WordVO wordVO = new WordVO();
-			wordVO.english = lines[0];
-			wordVO.korean = lines[1];
-			wordList.add(wordVO);
+			wordVO.english = lines[0];    //영문을 0번에 넣기
+			wordVO.korean = lines[1];     //번역을 1번에 넣기
+			wordList.add(wordVO);         //wordList에 추가하기
 		}
 		
 			
@@ -102,7 +102,7 @@ public class WordServiceImplV1 implements WordService {
 		System.out.println(Line.dLine(50));
 		System.out.println("영문단어\t\t\t한글번역");
 		System.out.println(Line.sLine(50));
-		for(WordVO vo: wordList) {
+		for(WordVO vo: wordList) {        //for문을 돌면서 wordList의 영문단어와 한글번역 따로 출력하기
 			System.out.printf("%s\t\t\t%s\n",vo.english, vo.korean);
 		}
 		System.out.println(Line.dLine(50));

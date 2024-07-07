@@ -37,11 +37,11 @@ public class WordExecC {
 			String inputString = scan.nextLine();
 			
 			if(inputString.equals("--QUIT")) break;
-			if(inputString.isBlank()) {
+			if(inputString.isBlank()) { //공백이거나 빈 문자열로 이루어져있을때 
 				System.out.println("영어 단어를 입력해주세요");
 				continue;
 			}
-			if(wordVO.english.equalsIgnoreCase(inputString)) {
+			if(wordVO.english.equalsIgnoreCase(inputString)) { //대소문자를 구분하지 않고 같은지 비교
 				System.out.println("참 잘했어요");
 				break;
 			} else {
@@ -49,12 +49,13 @@ public class WordExecC {
 				gameCount++;
 			}
 			if(gameCount > 5) {
-				System.out.println();
+				System.out.println("5번의 기회를 모두 놓쳤네요");
+				break;
 			}
 			
 		}
 		
-		
+		System.out.println("GAME OVER !!!");
 		
 	}
 }

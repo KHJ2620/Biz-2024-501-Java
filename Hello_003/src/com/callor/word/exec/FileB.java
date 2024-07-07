@@ -31,7 +31,7 @@ public class FileB {
 //		for(int i=0; scan.hasNext(); i++) {
 		while(scan.hasNext()) {			
 			String line = scan.nextLine();
-			String[] lines = line.split(":");
+			String[] lines = line.split(":");  // :을 기준으로 나눠서 String 배열로
 			System.out.printf("영어 : %s, 번역 : %s\n" ,lines[0], lines[1]);
 		}
 		
